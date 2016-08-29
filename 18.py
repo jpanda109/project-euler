@@ -17,8 +17,8 @@ lines = """75
 lines = lines.split("\n")
 
 triangle = []
-for i in range(len(lines)):
-    triangle.append([int(x) for x in lines[i].split()])
+for line in lines:
+    triangle.append([int(x) for x in line.split()])
 
 for i in range(len(triangle) - 2, -1, -1):
     for j in range(len(triangle[i])):
